@@ -804,13 +804,13 @@
     baselineSubbrand: '',
     footerBrandName: 'Baseline Development Companies, LLC',
     reportTitle: 'CONSTRUCTION STATUS',
-    issuedDate: '09 / 18 / 2026',
+    issuedDate: '10 / 02 / 2026',
     statusPill: 'Construction Underway',
     projectCode: 'TSC #3219',
     projectType: 'Ground-Up Retail Development',
     projectName: 'Tractor Supply',
     projectEmphasis: 'Raeford, NC',
-    subtitle: 'Building pad certification is in hand, and the site is ready for foundations. Wet detention pond excavation continues, and parking-lot subgrade is placed and compacted.',
+    subtitle: 'Footings are dug and poured and mass grading at the detention pond is complete. The site is moving into vertical construction. Immediate work is commencing stormwater pipe placement and underground utilities, starting CMU, and completing underslab utilities.',
     titleSide: [
       { label: 'SITE', values: ['752 Laurinburg Rd.', 'Raeford, NC 28376'] },
       { label: 'LANDLORD', values: ['Raeford NC Development Group, LLC'] }
@@ -823,11 +823,11 @@
       { icon: 'location', label: 'Location', value: 'Raeford, NC', subvalue: '752 Laurinburg Rd.' }
     ],
     schedule: {
-      overallPercent: 12,
+      overallPercent: 20,
       milestones: [
         { label: 'M1 · Start', date: 'Aug 24, 2026', state: 'done' },
         { label: 'M2 · BLDG Pad Cert.', date: 'WE Sep 18, 2026', state: 'done' },
-        { label: 'M3 · Earthwork', date: 'Underway', state: 'current' },
+        { label: 'M3 · Earthwork / Storm', date: 'Underway', state: 'current' },
         { label: 'M4 · Masonry', date: 'Nov. 3, 2026', state: 'upcoming' },
         { label: 'M5 · Structural Steel', date: 'Nov. 25. 2026', state: 'upcoming' },
         { label: 'M6 · CO / TCO', date: 'Mar 15, 2027', state: 'upcoming' }
@@ -836,32 +836,34 @@
     currentStatus: {
       trendText: '● Construction Underway',
       trendClass: 'ok',
-      completePercent: '12%',
-      dayCaption: 'Schedule-Based<br>Day 26 of 203',
+      completePercent: '20%',
+      dayCaption: 'Schedule-Based<br>Day 40 of 203',
       phases: [
         { no: 'P1', name: 'Pre-Mob Requirements', pct: 'Complete', state: 'Complete', stage: 'done' },
-        { no: 'P2', name: 'Mobilization & Earthwork', pct: 'Underway', state: 'Active', stage: 'active' },
-        { no: 'P3', name: 'Pad, Foundations & Slab', pct: 'Pad Certified · Footings Next', state: 'Active', stage: 'active' },
-        { no: 'P4', name: 'Masonry, Steel & Roofing', pct: '0%', state: 'Not Started', stage: 'upcoming' },
-        { no: 'P5', name: 'MEP, Sitework & Utilities', pct: '0%', state: 'Not Started', stage: 'upcoming' },
+        { no: 'P2', name: 'Mobilization & Earthwork', pct: 'Pond Grading Complete · Soil Export Active', state: 'Active', stage: 'active' },
+        { no: 'P3', name: 'Pad, Foundations & Slab', pct: 'Footings Complete · Underslab Planned', state: 'Active', stage: 'active' },
+        { no: 'P4', name: 'Masonry, Steel & Roofing', pct: 'CMU Planned', state: 'Not Started', stage: 'upcoming' },
+        { no: 'P5', name: 'MEP, Sitework & Utilities', pct: 'Storm / U/G Utilities Starting', state: 'Active', stage: 'active' },
         { no: 'P6', name: 'CO / Turnover', pct: '0%', state: 'Not Started', stage: 'upcoming' }
       ]
     },
     completedThisWeek: {
-      heading: 'Completed · Week Ending 09/18',
-      tag: 'Sitework / Pad',
+      heading: 'Completed · Week Ending 10/02',
+      tag: 'Pond / Footings',
       items: [
-        { text: 'Continued excavation at wet detention pond.', date: '09/18' },
-        { text: 'Placed and compacted parking-lot subgrade.', date: '09/18' },
-        { text: 'Received building pad certification.', date: '09/18' }
+        { text: 'Completed mass grading at detention pond', date: '10/02' },
+        { text: 'Completed digging and pouring footings', date: '10/02' },
+        { text: 'Continued exporting soil', date: '10/02' }
       ]
     },
     plannedNext: {
       heading: 'Planned · Next 2 Weeks',
-      tag: 'Foundations / Utilities',
+      tag: 'Utilities / CMU',
       items: [
-        { text: 'Complete mass excavation at wet detention pond.', date: 'Next 2 Wks' },
-        { text: 'Commence digging footings and underground utilities.', date: 'Next 2 Wks' }
+        { text: 'Commence stormwater pipe placement', date: 'Next 2 Wks' },
+        { text: 'Commence underground utilities', date: 'Next 2 Wks' },
+        { text: 'Commence CMU', date: 'Next 2 Wks' },
+        { text: 'Complete underslab utilities', date: 'Next 2 Wks' }
       ]
     },
     keyDates: [
@@ -881,7 +883,7 @@
       { role: 'Tenant PM', name: 'Paul Rondeau', org: 'Tractor Supply Company', email: 'prondeau@TractorSupply.com', phone: '813 · 298 · 2620' }
     ],
     footerLine: 'Retail · Ground-Up · Build-To-Suit',
-    footerMeta: ['Field update through 09/18/2026 · Issued 09/18/2026']
+    footerMeta: ['Field update through 10/02/2026 · Issued 10/02/2026']
   };
 </script>
 
