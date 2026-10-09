@@ -799,92 +799,257 @@
     Keep the layout/CSS stable unless Buck asks for design changes.
   */
   const dashboardData = {
-    theme: 'tractor-supply',
-    baselineBrand: 'Baseline Development Companies',
-    baselineSubbrand: '',
-    footerBrandName: 'Baseline Development Companies, LLC',
-    reportTitle: 'CONSTRUCTION STATUS',
-    issuedDate: '10 / 02 / 2026',
-    statusPill: 'Construction Underway',
-    projectCode: 'TSC #3219',
-    projectType: 'Ground-Up Retail Development',
-    projectName: 'Tractor Supply',
-    projectEmphasis: 'Raeford, NC',
-    subtitle: 'Footings are dug and poured and mass grading at the detention pond is complete. The site is moving into vertical construction. Immediate work is commencing stormwater pipe placement and underground utilities, starting CMU, and completing underslab utilities.',
-    titleSide: [
-      { label: 'SITE', values: ['752 Laurinburg Rd.', 'Raeford, NC 28376'] },
-      { label: 'LANDLORD', values: ['Raeford NC Development Group, LLC'] }
-    ],
-    snapshot: [
-      { icon: 'tenant', label: 'Tenant', value: 'Tractor Supply Co.', subvalue: 'Ground-Up Store' },
-      { icon: 'building', label: 'Building Type', value: 'Freestanding', subvalue: 'Retail Building' },
-      { icon: 'delivery', label: 'Delivery', value: 'Developer Delivered', subvalue: 'Ground-Up BTS' },
-      { icon: 'gc', label: 'General Contractor', value: 'WIMCO Corp.', subvalue: 'Prime GC' },
-      { icon: 'location', label: 'Location', value: 'Raeford, NC', subvalue: '752 Laurinburg Rd.' }
-    ],
-    schedule: {
-      overallPercent: 20,
-      milestones: [
-        { label: 'M1 · Start', date: 'Aug 24, 2026', state: 'done' },
-        { label: 'M2 · BLDG Pad Cert.', date: 'WE Sep 18, 2026', state: 'done' },
-        { label: 'M3 · Earthwork / Storm', date: 'Underway', state: 'current' },
-        { label: 'M4 · Masonry', date: 'Nov. 3, 2026', state: 'upcoming' },
-        { label: 'M5 · Structural Steel', date: 'Nov. 25. 2026', state: 'upcoming' },
-        { label: 'M6 · CO / TCO', date: 'Mar 15, 2027', state: 'upcoming' }
+  "theme": "tractor-supply",
+  "baselineBrand": "Baseline Development Companies",
+  "baselineSubbrand": "",
+  "footerBrandName": "Baseline Development Companies, LLC",
+  "reportTitle": "CONSTRUCTION STATUS",
+  "issuedDate": "10 / 09 / 2026",
+  "statusPill": "Construction Underway",
+  "projectCode": "TSC #3219",
+  "projectType": "Ground-Up Retail Development",
+  "projectName": "Tractor Supply",
+  "projectEmphasis": "Raeford, NC",
+  "subtitle": "Stormwater pipe and box setting is underway and masonry materials are on site. Immediate work is continuing stormwater pipe placement, commencing underground utilities and CMU, completing under slab utilities, and beginning slab preparation with termite treatment and stone base.",
+  "titleSide": [
+    {
+      "label": "SITE",
+      "values": [
+        "752 Laurinburg Rd.",
+        "Raeford, NC 28376"
       ]
     },
-    currentStatus: {
-      trendText: '● Construction Underway',
-      trendClass: 'ok',
-      completePercent: '20%',
-      dayCaption: 'Schedule-Based<br>Day 40 of 203',
-      phases: [
-        { no: 'P1', name: 'Pre-Mob Requirements', pct: 'Complete', state: 'Complete', stage: 'done' },
-        { no: 'P2', name: 'Mobilization & Earthwork', pct: 'Pond Grading Complete · Soil Export Active', state: 'Active', stage: 'active' },
-        { no: 'P3', name: 'Pad, Foundations & Slab', pct: 'Footings Complete · Underslab Planned', state: 'Active', stage: 'active' },
-        { no: 'P4', name: 'Masonry, Steel & Roofing', pct: 'CMU Planned', state: 'Not Started', stage: 'upcoming' },
-        { no: 'P5', name: 'MEP, Sitework & Utilities', pct: 'Storm / U/G Utilities Starting', state: 'Active', stage: 'active' },
-        { no: 'P6', name: 'CO / Turnover', pct: '0%', state: 'Not Started', stage: 'upcoming' }
+    {
+      "label": "LANDLORD",
+      "values": [
+        "Raeford NC Development Group, LLC"
       ]
+    }
+  ],
+  "snapshot": [
+    {
+      "icon": "tenant",
+      "label": "Tenant",
+      "value": "Tractor Supply Co.",
+      "subvalue": "Ground-Up Store"
     },
-    completedThisWeek: {
-      heading: 'Completed · Week Ending 10/02',
-      tag: 'Pond / Footings',
-      items: [
-        { text: 'Completed mass grading at detention pond', date: '10/02' },
-        { text: 'Completed digging and pouring footings', date: '10/02' },
-        { text: 'Continued exporting soil', date: '10/02' }
-      ]
+    {
+      "icon": "building",
+      "label": "Building Type",
+      "value": "Freestanding",
+      "subvalue": "Retail Building"
     },
-    plannedNext: {
-      heading: 'Planned · Next 2 Weeks',
-      tag: 'Utilities / CMU',
-      items: [
-        { text: 'Commence stormwater pipe placement', date: 'Next 2 Wks' },
-        { text: 'Commence underground utilities', date: 'Next 2 Wks' },
-        { text: 'Commence CMU', date: 'Next 2 Wks' },
-        { text: 'Complete underslab utilities', date: 'Next 2 Wks' }
-      ]
+    {
+      "icon": "delivery",
+      "label": "Delivery",
+      "value": "Developer Delivered",
+      "subvalue": "Ground-Up BTS"
     },
-    keyDates: [
-      { label: 'Construction Start', date: '08/24/2026' },
-      { label: 'Permanent Power', date: '12/20/2026' },
-      { label: '42-Day Notice', date: '02/01/2027' },
-      { label: 'CO / TCO', date: '03/15/2027' },
-      { label: 'Fixture Date', date: '03/21/2027', highlight: true }
-    ],
-    issues: [
-      { flag: 'Watch', flagClass: 'watch', text: 'Permanent power is scheduled for 12/20/2026.' },
-      { flag: 'Watch', flagClass: 'watch', text: '42-day notice is due 02/01/2027.' }
-    ],
-    contacts: [
-      { role: "Landlord's Rep / PM", name: 'Buck Culbreth', org: 'Baseline Development Companies, LLC', email: 'buck@baselinedevelopment.com', phone: '919 · 222 · 6063' },
-      { role: 'General Contractor PM', name: 'Dustin Bedwell', org: 'WIMCO Corp.', email: 'dustin@wimcocorp.com', phone: '608 · 322 · 7286' },
-      { role: 'Tenant PM', name: 'Paul Rondeau', org: 'Tractor Supply Company', email: 'prondeau@TractorSupply.com', phone: '813 · 298 · 2620' }
-    ],
-    footerLine: 'Retail · Ground-Up · Build-To-Suit',
-    footerMeta: ['Field update through 10/02/2026 · Issued 10/02/2026']
-  };
+    {
+      "icon": "gc",
+      "label": "General Contractor",
+      "value": "WIMCO Corp.",
+      "subvalue": "Prime GC"
+    },
+    {
+      "icon": "location",
+      "label": "Location",
+      "value": "Raeford, NC",
+      "subvalue": "752 Laurinburg Rd."
+    }
+  ],
+  "schedule": {
+    "overallPercent": 23,
+    "milestones": [
+      {
+        "label": "M1 · Start",
+        "date": "Aug 24, 2026",
+        "state": "done"
+      },
+      {
+        "label": "M2 · BLDG Pad Cert.",
+        "date": "WE Sep 18, 2026",
+        "state": "done"
+      },
+      {
+        "label": "M3 · Earthwork / Storm",
+        "date": "Underway",
+        "state": "current"
+      },
+      {
+        "label": "M4 · Masonry",
+        "date": "Nov. 3, 2026",
+        "state": "upcoming"
+      },
+      {
+        "label": "M5 · Structural Steel",
+        "date": "Nov. 25. 2026",
+        "state": "upcoming"
+      },
+      {
+        "label": "M6 · CO / TCO",
+        "date": "Mar 15, 2027",
+        "state": "upcoming"
+      }
+    ]
+  },
+  "currentStatus": {
+    "trendText": "● Construction Underway",
+    "trendClass": "ok",
+    "completePercent": "23%",
+    "dayCaption": "Schedule-Based<br>Day 47 of 203",
+    "phases": [
+      {
+        "no": "P1",
+        "name": "Pre-Mob Requirements",
+        "pct": "Complete",
+        "state": "Complete",
+        "stage": "done"
+      },
+      {
+        "no": "P2",
+        "name": "Mobilization & Earthwork",
+        "pct": "Pond Grading Complete",
+        "state": "Active",
+        "stage": "active"
+      },
+      {
+        "no": "P3",
+        "name": "Pad, Foundations & Slab",
+        "pct": "Footings Complete · Slab Prep Planned",
+        "state": "Active",
+        "stage": "active"
+      },
+      {
+        "no": "P4",
+        "name": "Masonry, Steel & Roofing",
+        "pct": "CMU Planned",
+        "state": "Not Started",
+        "stage": "upcoming"
+      },
+      {
+        "no": "P5",
+        "name": "MEP, Sitework & Utilities",
+        "pct": "Storm Underway · U/G Planned",
+        "state": "Active",
+        "stage": "active"
+      },
+      {
+        "no": "P6",
+        "name": "CO / Turnover",
+        "pct": "0%",
+        "state": "Not Started",
+        "stage": "upcoming"
+      }
+    ]
+  },
+  "completedThisWeek": {
+    "heading": "Completed · Week Ending 10/09",
+    "tag": "Storm / Masonry",
+    "items": [
+      {
+        "text": "Commenced setting stormwater pipe and boxes",
+        "date": "10/09"
+      },
+      {
+        "text": "Received masonry material deliveries",
+        "date": "10/09"
+      }
+    ]
+  },
+  "plannedNext": {
+    "heading": "Planned · Next 2 Weeks",
+    "tag": "Utilities / CMU / Slab",
+    "items": [
+      {
+        "text": "Continue stormwater pipe placement",
+        "date": "Next 2 Wks"
+      },
+      {
+        "text": "Commence underground utilities",
+        "date": "Next 2 Wks"
+      },
+      {
+        "text": "Commence CMU",
+        "date": "Next 2 Wks"
+      },
+      {
+        "text": "Complete underslab utilities",
+        "date": "Next 2 Wks"
+      },
+      {
+        "text": "Apply termite treatment to slab sub-base",
+        "date": "Next 2 Wks"
+      },
+      {
+        "text": "Commence placing stone base at building slab",
+        "date": "Next 2 Wks"
+      }
+    ]
+  },
+  "keyDates": [
+    {
+      "label": "Construction Start",
+      "date": "08/24/2026"
+    },
+    {
+      "label": "Permanent Power",
+      "date": "12/20/2026"
+    },
+    {
+      "label": "42-Day Notice",
+      "date": "02/01/2027"
+    },
+    {
+      "label": "CO / TCO",
+      "date": "03/15/2027"
+    },
+    {
+      "label": "Fixture Date",
+      "date": "03/21/2027",
+      "highlight": true
+    }
+  ],
+  "issues": [
+    {
+      "flag": "Watch",
+      "flagClass": "watch",
+      "text": "Permanent power is scheduled for 12/20/2026."
+    },
+    {
+      "flag": "Watch",
+      "flagClass": "watch",
+      "text": "42-day notice is due 02/01/2027."
+    }
+  ],
+  "contacts": [
+    {
+      "role": "Landlord's Rep / PM",
+      "name": "Buck Culbreth",
+      "org": "Baseline Development Companies, LLC",
+      "email": "buck@baselinedevelopment.com",
+      "phone": "919 · 222 · 6063"
+    },
+    {
+      "role": "General Contractor PM",
+      "name": "Dustin Bedwell",
+      "org": "WIMCO Corp.",
+      "email": "dustin@wimcocorp.com",
+      "phone": "608 · 322 · 7286"
+    },
+    {
+      "role": "Tenant PM",
+      "name": "Paul Rondeau",
+      "org": "Tractor Supply Company",
+      "email": "prondeau@TractorSupply.com",
+      "phone": "813 · 298 · 2620"
+    }
+  ],
+  "footerLine": "Retail · Ground-Up · Build-To-Suit",
+  "footerMeta": [
+    "Field update through 10/09/2026 · Issued 10/09/2026"
+  ]
+};
 </script>
 
 <div class="page">
@@ -947,7 +1112,7 @@
     <div class="status-grid">
       <div class="status-card">
         <div class="sc-row">
-          <span class="lbl">Overall Complete</span>
+          <span class="lbl">Schedule Elapsed</span>
           <span class="val" id="trend-text"></span>
         </div>
         <div class="sc-big">
